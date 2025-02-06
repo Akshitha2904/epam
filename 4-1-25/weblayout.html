@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #0d0d2b;
+  color: #f0f0f0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #1a1a40, #4b0082);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1a1a40;
+  border-bottom: 2px solid #4b0082;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #4b0082;
+  color: #fff;
+}
+
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  padding-right: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #1a1a40;
+  padding-left: 20px;
+  border-left: 2px solid #4b0082;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #333;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #2a2a5a;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1a1a40;
+  color: #f0f0f0;
+  margin-top: 20px;
+  border-top: 2px solid #4b0082;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cosmic Insights</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Gallery</a>
+  <a href="#">Blog</a>
+  <a href="#" style="float:right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Wonders of the Universe</h2>
+      <h5>Exploring the cosmos, Jan 23, 2025</h5>
+      <img src="gal.jpg" alt="Galaxy Image" style="width:100%; border-radius:10px;">
+      <p>Embark on an incredible journey through the vastness of space, where stars are born and galaxies collide in cosmic symphonies.</p>
+    </div>
+    <div class="card">
+      <h2>Black Holes: The Unknown Depths</h2>
+      <h5>Space mysteries, Dec 10, 2024</h5>
+      <img src="t.jpg" alt="Black Hole Image" style="width:100%; border-radius:10px;">
+      <p>Dive into the enigmatic phenomena of black holes, where gravity reigns supreme and nothing can escape their grasp.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="m.jpg" alt="My Image" style="width:100%; border-radius:10px;">
+      <p>Passionate about the cosmos and unraveling the mysteries of the universe.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <img src="p1.jpg" alt="Nebula" style="width:100%; border-radius:10px;">
+      <img src="p2.jpg" alt="Mars" style="width:100%; border-radius:10px;">
+      <img src="p3.jpg" alt="Saturn" style="width:100%; border-radius:10px;">
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Join me on this cosmic adventure.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Explore the Universe</h2>
+</div>
+
+</body>
+</html>
